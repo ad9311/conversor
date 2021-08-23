@@ -1,3 +1,8 @@
 # .gitignore
-.stylelintrc.json
-.hintrc
+# npm
+node_modules
+package-lock.json
+
+# sass
+styles.scss
+styles.css.map
