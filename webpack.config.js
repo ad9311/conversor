@@ -5,6 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
+    import: './src/quantity.js',
+    import: './src/renderer.js',
     index: './src/index.js',
   },
   output: {
