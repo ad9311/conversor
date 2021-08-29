@@ -6,7 +6,7 @@ class Quantity {
       Mass: ['Carat', 'Centigram', 'Gram', 'Kilogram', 'Miligram', 'Pound', 'Ton(Metric)'],
       Length: ['Centimeter', 'Foot', 'Inch', 'Kilometer', 'Meter', 'Mile', 'Yard'],
       Temperature: ['Celsius', 'Fahrenheit', 'Kelvin', 'Rankine'],
-      Volume: ['Cubir Centimeter', 'Cubic Foot', 'Cubic Inch', 'Cubic Meter',
+      Volume: ['Cubic Centimeter', 'Cubic Foot', 'Cubic Inch', 'Cubic Meter',
         'Gallon', 'Liter', 'Milliliter', 'Ounce', 'Tablespoon'],
     };
     return units;

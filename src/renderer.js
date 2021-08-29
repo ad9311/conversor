@@ -14,7 +14,7 @@ class Renderer {
 
   renderSelect(units) {
     this.clearSelect();
-    const selection = document.getElementById('quantities').value;
+    const selection = document.getElementById('quantity').value;
     units[selection].forEach((unit) => {
       this.appendOption('source', unit);
       this.appendOption('target', unit);

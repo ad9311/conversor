@@ -7,6 +7,8 @@ module.exports = {
   entry: {
     import: './src/quantity.js',
     import: './src/renderer.js',
+    import: './src/table.js',
+    import: './src/input.js',
     index: './src/index.js',
   },
   output: {

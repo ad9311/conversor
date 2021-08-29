@@ -1,0 +1,5 @@
+class Conversion {
+  newConversion(selection) {
+
+  }
+}
