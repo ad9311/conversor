@@ -20,6 +20,10 @@ class Renderer {
       this.appendOption('target', unit);
     });
   }
+
+  renderResult = (result) => {
+    document.getElementById('result').innerHTML = result;
+  }
 }
 
 const renderer = new Renderer();
