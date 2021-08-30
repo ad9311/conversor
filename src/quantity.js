@@ -17,7 +17,7 @@ class Quantity {
         'Centigram',
         'Gram',
         'Kilogram',
-        'Miligram',
+        'Milligram',
         'Pound',
         'Ton(Metric)',
       ],
