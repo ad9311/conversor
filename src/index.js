@@ -9,11 +9,24 @@ function renderSelection() {
 }
 
 function getResult() {
-  const quantityTable = table.getQuantityTable(input.getQuantitySource());
-  const result = conversion.newConversion(quantityTable, input.getUserInput(), input.getTarget());
-  renderer.renderResult(result);
+  if (document.getElementById('input').value !== '') {
+    const quantityTable = table.getQuantityTable(input.getQuantitySource());
+    const result = conversion.newConversion(quantityTable, input.getUserInput(), input.getTarget());
+    renderer.renderResult(result);
+  }
 }
+
+function switchSelection() {
+  renderer.switchOption();
+  getResult();
+}
+
+const sourceTarget = ['source', 'target'];
 
 window.addEventListener('load', renderSelection());
 document.getElementById('quantity').addEventListener('change', () => renderSelection());
-document.getElementById('convert').addEventListener('click', () => getResult());
+document.getElementById('input').addEventListener('input', () => getResult());
+document.getElementById('switch').addEventListener('click', () => switchSelection());
+sourceTarget.forEach((id) => {
+  document.getElementById(id).addEventListener('change', () => getResult());
+});

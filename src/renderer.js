@@ -1,14 +1,30 @@
 class Renderer {
+  cleanId = (id, unit) => {
+    const formatedUnit = unit.replace(/[\s()]/g, '');
+    const cleanId = `${id}-${formatedUnit.toLowerCase()}`;
+    return cleanId;
+  }
+
+  switchOption = () => {
+    const sourceValue = document.getElementById('source').value;
+    const targetValue = document.getElementById('target').value;
+    document.getElementById(this.cleanId('source', sourceValue)).selected = false;
+    document.getElementById(this.cleanId('target', targetValue)).selected = false;
+    document.getElementById(this.cleanId('target', sourceValue)).selected = true;
+    document.getElementById(this.cleanId('source', targetValue)).selected = true;
+  }
+
   clearSelect = () => {
     document.getElementById('source').innerHTML = '';
     document.getElementById('target').innerHTML = '';
   }
 
-  appendOption = (id, unit) => {
+  appendOption(id, unit) {
     const selectTag = document.getElementById(id);
     const option = document.createElement('option');
     option.value = unit;
     option.innerHTML = unit;
+    option.id = this.cleanId(id, unit);
     selectTag.appendChild(option);
   }
 

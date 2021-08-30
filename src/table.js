@@ -246,25 +246,25 @@ class Table {
     const temperatureTable = {
       Celsius: {
         toCelsius: 1.0,
-        toFahrenheit: (c) => c * 9 / 5 + 32,
+        toFahrenheit: (c) => c * (9 / 5) + 32,
         toKelvin: (c) => c + 273.15,
-        toRankine: (c) => (c + 273.15) * 9 / 5,
+        toRankine: (c) => (c + 273.15) * (9 / 5),
       },
       Fahrenheit: {
-        toCelsius: (f) => (f - 32) * 5 / 9,
+        toCelsius: (f) => (f - 32) * (5 / 9),
         toFahrenheit: 1.0,
-        toKelvin: (f) => (f + 459.67) * 5 / 9,
+        toKelvin: (f) => (f + 459.67) * (5 / 9),
         toRankine: (f) => f + 459.67,
       },
       Kelvin: {
         toCelsius: (k) => k - 273.15,
-        toFahrenheit: (k) => k * 9 / 5 - 459.67,
+        toFahrenheit: (k) => k * (9 / 5) - 459.67,
         toKelvin: 1.0,
-        toRankine: (k) => k * 9 / 5,
+        toRankine: (k) => k * (9 / 5),
       },
       Rankine: {
         toCelsius: (r) => (r - 491.67) / 1.8,
-        toFahrenheit: (r) => r + 459.67,
+        toFahrenheit: (r) => r - 459.67,
         toKelvin: (r) => r / 1.8,
         toRankine: 1.0,
       },
