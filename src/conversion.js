@@ -1,7 +1,15 @@
 class Conversion {
+  constructor() {
+    this.result = 0.0;
+  }
+
   newConversion(quantityTable, userInput, target) {
-    const base = quantityTable[`to${target}`];
-    this.result = base * parseFloat(userInput);
+    const fromTable = quantityTable[`to${target}`];
+    if (typeof fromTable === 'number') {
+      this.result = fromTable * parseFloat(userInput);
+    } else {
+      this.result = fromTable(parseFloat(userInput));
+    }
     return this.result;
   }
 }
