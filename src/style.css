@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #f8f8f8;
+  font-family: "Amaranth", sans-serif;
+}
+
+.banner {
+  height: 4rem;
+  background-image: url("./img/measure.png");
+  background-repeat: repeat-x;
+  background-size: 4.5rem;
+}
+
+header {
+  margin-bottom: 3.5rem;
+  height: 5em;
+  background-color: #d73f19;
+}
+
+header div {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+section {
+  background-color: #e4e4e4;
+  border: 0.1rem solid #d8d8d8;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+select,
+input {
+  height: 1.5rem;
+  background-color: #f0f0f0;
+  color: #1f271b;
+  border: 0.1rem solid #d8d8d8;
+  outline: none;
+}
+
+select {
+  font-size: 1rem;
+}
+
+input[type=text] {
+  font-size: 1rem;
+}
+
+svg {
+  fill: #d73f19;
+}
+
+output {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f271b;
+}
+
+footer {
+  background-color: #1f271b;
+}

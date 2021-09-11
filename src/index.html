@@ -4,28 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ad9311/css-reductor@dev-alpha/css/reductor.css">
     <title>Document</title>
   </head>
   <body>
-    <main>
-      <div>
-        <select name="quantity" id="quantity">
-          <option value="Area">Area</option>
-          <option value="Mass">Mass</option>
-          <option value="Length">Length</option>
-          <option value="Temperature">Temperature</option>
-          <option value="Volume">Volume</option>
-        </select>
+    <div class="banner">
+    </div>
+    <header class="d-flex align-items-center">
+      <div class="pcon-4">
+        <h1>Conversor</h1>
       </div>
-      <div>
-        <select name="source" id="source"></select>
-        <input type="button" value="Switch" id="switch">
-        <select name="target" id="target"></select>
-      </div>
-      <div>
-        <input type="text" name="input" id="input">
-        <output id="result"></output>
-      </div>
+    </header>
+    <main class="p-2">
+      <section class="con-1 p-3">
+        <div class="pb-2">
+          <select class="d-block m-auto" name="quantity" id="quantity">
+            <option value="Area">Area</option>
+            <option value="Mass">Mass</option>
+            <option value="Length">Length</option>
+            <option value="Temperature">Temperature</option>
+            <option value="Volume">Volume</option>
+          </select>
+        </div>
+        <div class="pb-2">
+          <select class="d-block m-auto mb-2" name="source" id="source"></select>
+          <svg class="d-block m-auto mb-2" id="switch" role="button" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-5 17v-6h-2l3-4 3 4h-2v4h2.953l1.594 2h-6.547zm9 0l-3-4h2v-4h-2.922l-1.594-2h6.516v6h2l-3 4z"/>
+          </svg>
+          <select class="d-block m-auto" name="target" id="target"></select>
+        </div>
+        <div class="pb-2">
+          <input class=" d-block m-auto" type="text" name="input" id="input">
+          <output class="d-block ptb-3 text-center" id="result">0</output>
+        </div>
+      </section>
     </main>
+    <footer class="pos-absolute bottom-0 w-100">
+      <div class="plr-4 ptb-2">
+        <span>Ángel Díaz</span>
+        <a class="pl-2" href="https://github.com/ad9311/conversor">GitHub</a>
+        <a class="pl-2" href="https://www.linkedin.com/in/ad9311/">LinkedIn</a>
+      </div>
+    </footer>
   </body>
 </html>

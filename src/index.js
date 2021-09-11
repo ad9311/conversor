@@ -1,3 +1,4 @@
+import './style.css';
 import quantity from './quantity.js';
 import renderer from './renderer.js';
 import table from './table.js';
